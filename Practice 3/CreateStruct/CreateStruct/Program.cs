@@ -5,11 +5,12 @@ using System.Text;
 namespace CreateStruct {
     class Program {
         static void Main(string[] args) {
-            Person p = new Person("Tony", "Allen", 32, Person.Genders.Male);
+            Manager p = new Manager("Михал", "Палыч", 32, Person.Genders.Male, "22505", "ул. Красноармейская 4");
             Console.WriteLine(p.ToString());
+            Console.ReadKey(); // prevents from closing
         }
 
-        struct Person {
+        class Person {
             public string firstName;
             public string lastName;
             public int age;
@@ -23,10 +24,24 @@ namespace CreateStruct {
             }
 
             public override string ToString() {
-                return firstName + " " + lastName + " (" + gender + "), age " + age;
+                return firstName + " " + lastName + " (" + gender + "), age: " + age;
             }
 
             public enum Genders : int { Male, Female };
+        }
+        class Manager : Person {
+            public string phoneNumber;
+            public string officeLocation;
+
+            public Manager(string _firstName, string _lastName, int _age, Genders _gender, string _phoneNumber,
+                string _officeLocation) : base(_firstName, _lastName, _age, _gender) {
+                phoneNumber = _phoneNumber;
+                officeLocation = _officeLocation;
+            }
+
+            public override string ToString() {
+                return base.ToString() + ", phone: " + phoneNumber + ", location: " + officeLocation;
+            }
         }
     }
 }
