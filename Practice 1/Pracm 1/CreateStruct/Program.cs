@@ -15,7 +15,7 @@ namespace CreateStruct
         {
             firstName = _firstName;
             lastName = _lastName; 
-            age = _age;
+            age = _age; 
             gender = _gender;
         }
         public override string ToString()
