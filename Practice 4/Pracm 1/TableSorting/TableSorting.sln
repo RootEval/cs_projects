@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableSorting", "TableSorting.csproj", "{5C7E48E5-4B60-428B-A827-06E8E673388D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C7E48E5-4B60-428B-A827-06E8E673388D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C7E48E5-4B60-428B-A827-06E8E673388D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C7E48E5-4B60-428B-A827-06E8E673388D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C7E48E5-4B60-428B-A827-06E8E673388D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A9B0C7A-5B04-46E7-9F55-48C5D166F5E6}
+	EndGlobalSection
+EndGlobal
