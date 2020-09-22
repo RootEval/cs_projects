@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1 {
+namespace ChangeFileEncoding {
     class Program {
         static void Main(string[] args) {
             StreamReader sr = new StreamReader(@"boot.ini");
